@@ -17,6 +17,8 @@ def checkParams(param):
         nouppercase = True
     elif param == "--nodigits" or param == "-nd":
         nodigits = True
+    elif param == "--nosymbols" or param == "-ns":
+        nosymbols = True
 
 def main(params):
     for param in params:
