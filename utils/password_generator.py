@@ -13,6 +13,8 @@ def checkParams(param):
 
     if param == "--nolower" or param == "-nl":
         nolowercase = True
+    elif param == "--noupper" or param == "-nu":
+        nouppercase = True
 
 def main(params):
     for param in params:
