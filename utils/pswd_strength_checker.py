@@ -7,4 +7,4 @@ def main():
     }
 
     if password in badPasswords:
-        print(f'Password: {password} is very common')
+        print(f'Password is very common!')
