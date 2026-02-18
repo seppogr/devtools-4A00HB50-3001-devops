@@ -1,5 +1,6 @@
 import sys
 import utils.password_generator as pg
+import utils.pswd_strength_checker as psc
 
 def switch(params):
     if len(params) > 1:
@@ -8,7 +9,7 @@ def switch(params):
         elif params[1] == "--passwordgenerator" or "-pg":
             pg.main()
         elif params[1] == "--pswdchk":
-            return "password check call here!"
+            psc.main()
         else:
             print("Please input a valid command.")
     else:
