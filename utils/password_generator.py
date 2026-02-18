@@ -19,6 +19,8 @@ def checkParams(param):
         nodigits = True
     elif param == "--nosymbols" or param == "-ns":
         nosymbols = True
+    else:
+        "Invalid extension. For all accessible extensions check: '-pg -h' or --passwordgenerator --help"
 
 def main(params):
     for param in params:
