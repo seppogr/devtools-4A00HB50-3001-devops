@@ -8,7 +8,7 @@ def switch(params):
         if params[1] == "--hello":
             print("Hello World!")
         elif params[1] == "--passwordgenerator" or params[1] == "-pg":
-            pg.main()
+            pg.main(params)
         elif params[1] == "--jsonconverter" or params[1] == "-js":
             js.main()
         elif params[1] == "--pswdchk":
