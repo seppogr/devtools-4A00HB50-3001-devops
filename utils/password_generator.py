@@ -1,3 +1,3 @@
 
-def to_string():
+def main():
     print("This is a password generator")
