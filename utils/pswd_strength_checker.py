@@ -13,4 +13,3 @@ def main():
         print(f'Password is really short')
 
 
-# pswd_strength_checker
