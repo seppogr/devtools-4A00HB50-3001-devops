@@ -1,3 +1,4 @@
+import re
 
 def main():
     password = input("Enter password to be checked: ").lower()
@@ -11,12 +12,17 @@ def main():
         print(f'Password is very common!')
     else:
         print(f'Password is not in the bad passwords list.')
-
+#
     if len(password) < 6:
         print(f'Password is really short')
     else:
         print(f'Looks ok length')
 
+
+    if (bool(re.search(r"(\d|[^A-Za-z0-9\s])", password))):
+        print(f'Password contains special characters or numbers')
+    else:
+        print(f'No special characters or numbers found.')
 
 # pswd_strength_checker
 
