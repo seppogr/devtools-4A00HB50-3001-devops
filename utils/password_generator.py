@@ -24,7 +24,11 @@ def checkParams(param):
         nosymbols = True
 
     elif param.startswith("--length=") or param.startswith("-l="):
-        length = int(param.split("=")[1])
+        try:
+            length = int(param.split("=")[1])
+        except ValueError:
+            print("Invalid length value.")
+            exit()
 
     else:
         "Invalid extension. For all accessible extensions check: '-pg -h' or --passwordgenerator --help"
