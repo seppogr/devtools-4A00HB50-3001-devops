@@ -15,7 +15,7 @@ def main():
     if password in badPasswords:
         print(f'Password is very common.')
     else:
-        print(f'Password is not one of the most commen passowrds')
+        print(f'Password is not one of the most common passowrds')
         password_score += 1
 
     if len(password) < 6:
@@ -41,6 +41,8 @@ def main():
     if has_upper(password):
         print(f'Password has upper characters.')
         password_score += 1
+    else:
+        print(f'Password has no upper characters.')
 
 # Check for numbers
     def has_digit(password):
@@ -50,7 +52,7 @@ def main():
         print(f'Password has numbers.')
         password_score += 1
     else:
-         print(f'Password has no upper characters.')
+         print(f'Password has no numbers.')
 
 # Check for special characters
     def has_symbol(password):
@@ -85,5 +87,5 @@ def main():
 
 
 # Give final score to user
-    print(f'Your password score is {password_score}/{password_max_points}')
+    print(f'Your password score is {password_score}/{password_max_points}.')
 
