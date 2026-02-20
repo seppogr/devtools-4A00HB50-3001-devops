@@ -18,12 +18,19 @@ def main():
         print(f'Password length is six or more characters.')
         password_score += 1
 
-    # this will check if the password contains numbers or special characters
-    if (bool(re.search(r"(\d|[^A-Za-z0-9\s])", password))):
-        print(f'Password contains special characters or numbers.')
+    # # this will check if the password contains numbers or special characters
+    # if (bool(re.search(r"(\d|[^A-Za-z0-9\s])", password))):
+    #     print(f'Password contains special characters or numbers.')
+    #     password_score += 1
+    # else:
+    #     print(f'No special characters or numbers found.')
+
+    def has_lower(password):
+        return re.search(r"[a-z]", password)
+
+    if has_lower(password):
         password_score += 1
-    else:
-        print(f'No special characters or numbers found.')
+
 
 # Check if the password has 3 or more repeatung chars in a row
     def check_for_long_repeat(password):
@@ -44,6 +51,7 @@ def main():
     else:
         print(f'The password does not contain more than two same characters in row.')
         password_score += 1
+
 
 # Give final score to user
     print(f'Your password score is {password_score}/{password_max_points}')
