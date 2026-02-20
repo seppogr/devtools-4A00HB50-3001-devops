@@ -1,7 +1,7 @@
 import re
 
 def main():
-    password_max_points = 3
+    password_max_points = 6
     password_score = 0
     password = input("Enter password to be checked: ").lower()
     badPasswords = {
@@ -41,6 +41,12 @@ def main():
         return re.search(r"[0-9]", password)
 
     if has_digit(password):
+        password_score += 1
+
+    def has_symbol(password):
+        return re.search(r"[^a-zA-Z0-9]", password)
+
+    if has_symbol(password):
         password_score += 1
 
 # Check if the password has 3 or more repeatung chars in a row
