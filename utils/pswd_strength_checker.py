@@ -1,7 +1,7 @@
 import re
 
 def main():
-    password_max_points = 6
+    password_max_points = 7
     password_score = 0
     password = input("Enter password to be checked: ")
     badPasswords = {
@@ -11,6 +11,12 @@ def main():
 
     print(f'Analysis for your password:')
     # This will check for password length
+
+    if password in badPasswords:
+        print(f'Password is very common.')
+    else:
+        print(f'Password is not one of the most commen passowrds')
+        password_score += 1
 
     if len(password) < 6:
         print(f'Password is too short (less than 6 characters).')
