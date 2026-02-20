@@ -21,6 +21,7 @@ def main():
     else:
         print(f'No special characters or numbers found.')
 
+# Check if the password has 3 or more repeatung chars in a row
     def check_for_long_repeat(password):
         max_repeat = 3
         count = 1
@@ -33,6 +34,7 @@ def main():
                 count = 1
         return None
 
+# print if there are 3 or more
     if check_for_long_repeat(password) != None:
         print(f'The password contains {check_for_long_repeat(password)} repaeting characters in row. Only 3 allowed.')
 
