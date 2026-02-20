@@ -10,6 +10,7 @@ Options:
 --noupper   | -nu                   –      Exclude uppercase characters
 --nodigits  | -nd                   –      Exclude digits
 --nosymbols | -ns                   –      Exclude symbols
+--length=<value> | -l=<value>       –      Add custom length for the password
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Combining options example:
 -pg -nl -nd -ns
