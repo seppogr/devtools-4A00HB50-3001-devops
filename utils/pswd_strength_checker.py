@@ -18,13 +18,7 @@ def main():
         print(f'Password length is six or more characters.')
         password_score += 1
 
-    # # this will check if the password contains numbers or special characters
-    # if (bool(re.search(r"(\d|[^A-Za-z0-9\s])", password))):
-    #     print(f'Password contains special characters or numbers.')
-    #     password_score += 1
-    # else:
-    #     print(f'No special characters or numbers found.')
-
+# Check for lowercase characters
     def has_lower(password):
         return re.search(r"[a-z]", password)
 
@@ -32,6 +26,7 @@ def main():
         print(f'Password has lower characters.')
         password_score += 1
 
+# Check for uppercase characters
     def has_upper(password):
         return re.search(r"[A-Z]", password)
 
@@ -39,6 +34,7 @@ def main():
         print(f'Password has upper characters.')
         password_score += 1
 
+# Check for numbers
     def has_digit(password):
         return re.search(r"[0-9]", password)
 
@@ -46,6 +42,7 @@ def main():
         print(f'Password has numbers.')
         password_score += 1
 
+# Check for special characters
     def has_symbol(password):
         return re.search(r"[^a-zA-Z0-9]", password)
 
