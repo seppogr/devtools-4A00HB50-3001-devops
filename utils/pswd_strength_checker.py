@@ -1,6 +1,8 @@
 import re
 
 def main():
+    password_max_points = 3
+    password_score = 0
     password = input("Enter password to be checked: ").lower()
     badPasswords = {
         "admin", "password", "12345", "iloveyou", "qwerty",
@@ -14,10 +16,12 @@ def main():
         print(f'Password is really short (less than 6 characters).')
     else:
         print(f'Looks ok length.')
+        password_score += 1
 
     # this will check if the password contains numbers or special characters
     if (bool(re.search(r"(\d|[^A-Za-z0-9\s])", password))):
         print(f'Password contains special characters or numbers.')
+        password_score += 1
     else:
         print(f'No special characters or numbers found.')
 
@@ -39,4 +43,7 @@ def main():
         print(f'The password contains {check_for_long_repeat(password)} repaeting characters in row. Only 3 allowed.')
     else:
         print(f'The password does not contain more then two same characters in row')
+        password_score += 1
+
+    print(f'Your password score is {password_score}/{password_max_points}')
 
