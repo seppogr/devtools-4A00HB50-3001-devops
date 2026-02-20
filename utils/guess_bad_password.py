@@ -21,15 +21,14 @@ turns = 12
 while turns > 0:
 
     failed = 0
-
     for char in badPassword:
-
         if char in guesses:
             print(char, end=" ")
-
         else:
-            print("_")
+            print("_", end=" ")
             failed += 1
+
+    print()
 
     if failed == 0:
         print("You Win")
