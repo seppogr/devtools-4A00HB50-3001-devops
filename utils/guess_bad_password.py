@@ -4,10 +4,6 @@
 
 import random
 
-name = input("What is your name? ")
-
-print(f'Good Luck {name}!')
-
 badPasswords =[
     "admin", "password", "12345", "iloveyou", "qwerty",
     "abc123", "654321", "p@ssw0rd"
