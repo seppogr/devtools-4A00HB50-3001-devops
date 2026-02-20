@@ -44,3 +44,6 @@ def main():
 
             if turns == 0:
                 print(f'You loose! The bad password was "{badPassword}".')
+
+            if password_score < 4:
+                print(f'You can try to learn som good passwords by playin our "Guess bad password" -game. Try it today and learn!')
