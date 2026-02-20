@@ -1,6 +1,9 @@
+# This is a simple hangman game in which the user guesses
+# the characters of a word from badPasswords array.
+# The words are randomized each time.
+
 import random
 
-#def main():
 name = input("What is your name? ")
 
 print(f'Good Luck {name}!')
@@ -11,12 +14,11 @@ badPasswords =[
 ]
 
 badPassword = random.choice(badPasswords)
-
-print("Guess the characters")
-print(f'Try to guess a bad password before time runs out.')
-
 guesses = ''
 turns = 12
+print(f'Try to guess a bad password before time runs out. You have {turns} guesses remaining.')
+
+
 
 while turns > 0:
 
@@ -31,20 +33,20 @@ while turns > 0:
     print()
 
     if failed == 0:
-        print("You Win")
-        print("The bad password is: ", badPassword)
+        print("You got it!")
+        print(f'The bad password is: {badPassword}')
         break
 
     print()
-    guess = input("guess a character:")
+    guess = input("Guess a character: ")
 
     guesses += guess
 
     if guess not in badPassword:
 
         turns -= 1
-        print("Wrong")
-        print("You have", + turns, 'more guesses')
+        print("Wrong guess.")
+        print(f'You have {turns} guesses remaining.')
 
         if turns == 0:
-            print("You Loose")
+            print(f'You loose! The bad password was "{badPassword}".')
