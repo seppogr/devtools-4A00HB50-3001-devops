@@ -14,7 +14,7 @@ def checkParams(param):
 
     if param == "--help" or param == "-h":
         printFile("utils/docs/pg_help.txt")
-        exit()
+        exit(1)
     elif param == "--nolower" or param == "-nl":
         nolowercase = True
     elif param == "--noupper" or param == "-nu":
@@ -31,8 +31,12 @@ def checkParams(param):
             print("Invalid length value.")
             exit()
 
+    elif param == "-pg" or param == "--passwordgenerator" or param == "devtools.py":
+        return
+
     else:
-        "Invalid extension. For all accessible extensions check: '-pg -h' or --passwordgenerator --help"
+        print("Invalid extension. For all accessible extensions check: '-pg -h' or --passwordgenerator --help")
+        exit(1)
 
 def main(params):
     for param in params:

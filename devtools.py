@@ -2,6 +2,7 @@ import sys
 import utils.password_generator as pg
 import utils.json2txt as js
 import utils.pswd_strength_checker as psc
+import utils.guess_bad_password as gbp
 
 def switch(params):
     if len(params) > 1:
@@ -13,6 +14,8 @@ def switch(params):
             js.main()
         elif params[1] == "--pswdchk":
             psc.main()
+        elif params[1] == "--guessbadpassword" or params[1] == "-gbp":
+            gbp.main()
         else:
             print("Please input a valid command.")
     else:
