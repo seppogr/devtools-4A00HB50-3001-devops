@@ -19,3 +19,8 @@ Custom length setting example:
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Help:
 --Help                              –     Display utils/docs/pg_help.txt
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+* Password strength checker *
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+--pswdchk                   - Asks for a password and analyses ts strength
