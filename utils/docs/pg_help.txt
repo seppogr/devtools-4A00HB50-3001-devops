@@ -32,5 +32,13 @@ following tests:
 - has lowercase
 - is longer than 6 characters
 - has no more than 2 same characters in row, eg "aa" is allowed but "aaa" is not
+
 Command:
 --pswdchk                   - Asks for a password and analyses ts strength
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+* Guess bad password *
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+A fun way to learn what passwords not to use. A hangman game of bad choices!!!
+Command:
+--guessbadpassword or -gbp
