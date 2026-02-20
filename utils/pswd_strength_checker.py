@@ -21,3 +21,18 @@ def main():
     else:
         print(f'No special characters or numbers found.')
 
+    def check_for_long_repeat(password):
+        max_repeat = 3
+        count = 1
+        for i in range(1, len(password)):
+            if password[i] == password[i-1]:
+                count += 1
+                if count >= max_repeat:
+                    return count
+            else:
+                count = 1
+        return None
+
+    if check_for_long_repeat(password) != None:
+        print(f'The password contains {check_for_long_repeat(password)} repaeting characters in row. Only 3 allowed.')
+
