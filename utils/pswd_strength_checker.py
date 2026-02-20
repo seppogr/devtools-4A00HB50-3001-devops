@@ -13,9 +13,9 @@ def main():
     # This will check for password length
 
     if len(password) < 6:
-        print(f'Password is really short (less than 6 characters).')
+        print(f'Password is too short (less than 6 characters).')
     else:
-        print(f'Looks ok length.')
+        print(f'Password length is six or more characters.')
         password_score += 1
 
     # this will check if the password contains numbers or special characters
@@ -40,10 +40,11 @@ def main():
 
 # print if there are 3 or more
     if check_for_long_repeat(password) != None:
-        print(f'The password contains {check_for_long_repeat(password)} repaeting characters in row. Only 3 allowed.')
+        print(f'The password contains {check_for_long_repeat(password)} repeating characters in row. Only two allowed.')
     else:
-        print(f'The password does not contain more then two same characters in row')
+        print(f'The password does not contain more than two same characters in row.')
         password_score += 1
 
+# Give final score to user
     print(f'Your password score is {password_score}/{password_max_points}')
 
