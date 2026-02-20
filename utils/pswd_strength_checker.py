@@ -8,12 +8,6 @@ def main():
         }
 
     print(f'Analysis for your password:')
-
-        if len(password) < 6:
-            print(f'Password is really short')
-        else:
-            print(g'Looks ok length)
-
     # This will check for password length
 
     if len(password) < 6:
