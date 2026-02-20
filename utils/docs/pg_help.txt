@@ -1,0 +1,18 @@
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+* Password generator *
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Command:
+--passwordgenerator | -pg       –   Generating password with default setting
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Options:
+--nolower   | -nl                   –      Exclude lowercase characters
+--noupper   | -nu                   –      Exclude uppercase characters
+--nodigits  | -nd                   –      Exclude digits
+--nosymbols | -ns                   –      Exclude symbols
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Combining options example:
+-pg -nl -nd -ns
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Help:
+--Help                              –     Display utils/docs/pg_help.txt
