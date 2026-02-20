@@ -37,4 +37,6 @@ def main():
 # print if there are 3 or more
     if check_for_long_repeat(password) != None:
         print(f'The password contains {check_for_long_repeat(password)} repaeting characters in row. Only 3 allowed.')
+    else:
+        print(f'The password does not contain more then two same characters in row')
 
