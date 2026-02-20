@@ -40,5 +40,9 @@ def main(params):
     if not nodigits:    charset += string.digits
     if not nosymbols:   charset += string.punctuation
 
+    if not charset:
+        print("Error: all character sets excluded.")
+        return
+
     password = "".join(random.choice(charset) for _ in range(length))
     print(password)
