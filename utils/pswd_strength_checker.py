@@ -3,7 +3,7 @@ import re
 def main():
     password_max_points = 6
     password_score = 0
-    password = input("Enter password to be checked: ").lower()
+    password = input("Enter password to be checked: ")
     badPasswords = {
         "admin", "password", "12345", "iloveyou", "qwerty",
         "abc123", "654321", "p@ssw0rd"
@@ -18,35 +18,36 @@ def main():
         print(f'Password length is six or more characters.')
         password_score += 1
 
-    # # this will check if the password contains numbers or special characters
-    # if (bool(re.search(r"(\d|[^A-Za-z0-9\s])", password))):
-    #     print(f'Password contains special characters or numbers.')
-    #     password_score += 1
-    # else:
-    #     print(f'No special characters or numbers found.')
-
+# Check for lowercase characters
     def has_lower(password):
         return re.search(r"[a-z]", password)
 
     if has_lower(password):
+        print(f'Password has lower characters.')
         password_score += 1
 
+# Check for uppercase characters
     def has_upper(password):
         return re.search(r"[A-Z]", password)
 
     if has_upper(password):
+        print(f'Password has upper characters.')
         password_score += 1
 
+# Check for numbers
     def has_digit(password):
         return re.search(r"[0-9]", password)
 
     if has_digit(password):
+        print(f'Password has numbers.')
         password_score += 1
 
+# Check for special characters
     def has_symbol(password):
         return re.search(r"[^a-zA-Z0-9]", password)
 
     if has_symbol(password):
+        print(f'Password has symbols.')
         password_score += 1
 
 # Check if the password has 3 or more repeatung chars in a row
