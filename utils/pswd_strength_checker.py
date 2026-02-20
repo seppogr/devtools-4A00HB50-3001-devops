@@ -25,6 +25,8 @@ def main():
     if has_lower(password):
         print(f'Password has lower characters.')
         password_score += 1
+    else:
+        print(f'Password has no lower characters.')
 
 # Check for uppercase characters
     def has_upper(password):
@@ -41,6 +43,8 @@ def main():
     if has_digit(password):
         print(f'Password has numbers.')
         password_score += 1
+    else:
+         print(f'Password has no upper characters.')
 
 # Check for special characters
     def has_symbol(password):
@@ -49,6 +53,9 @@ def main():
     if has_symbol(password):
         print(f'Password has symbols.')
         password_score += 1
+    else:
+        print(f'Password has no symbols.')
+
 
 # Check if the password has 3 or more repeatung chars in a row
     def check_for_long_repeat(password):
