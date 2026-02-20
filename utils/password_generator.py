@@ -10,7 +10,6 @@ nosymbols = False
 
 def checkParams(param):
     global nolowercase, nouppercase, nodigits, nosymbols
-
     if param == "--nolower" or param == "-nl":
         nolowercase = True
     elif param == "--noupper" or param == "-nu":
@@ -21,6 +20,11 @@ def checkParams(param):
         nosymbols = True
     else:
         "Invalid extension. For all accessible extensions check: '-pg -h' or --passwordgenerator --help"
+
+def printFile(path):
+    with open(path, 'r') as file:
+        for line in file:
+            print(line)
 
 def main(params):
     for param in params:
