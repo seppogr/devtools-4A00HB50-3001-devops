@@ -37,6 +37,11 @@ def main():
     if has_upper(password):
         password_score += 1
 
+    def has_digit(password):
+        return re.search(r"[0-9]", password)
+
+    if has_digit(password):
+        password_score += 1
 
 # Check if the password has 3 or more repeatung chars in a row
     def check_for_long_repeat(password):
