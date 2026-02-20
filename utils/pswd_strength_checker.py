@@ -10,14 +10,15 @@ def main():
         }
 
     print(f'Analysis for your password:')
-    # This will check for password length
 
+# Check against the most common passwords
     if password in badPasswords:
         print(f'Password is very common.')
     else:
         print(f'Password is not one of the most common passowrds')
         password_score += 1
 
+# This will check for password length
     if len(password) < 6:
         print(f'Password is too short (less than 6 characters).')
     else:
@@ -78,7 +79,6 @@ def main():
                 count = 1
         return None
 
-# print if there are 3 or more
     if check_for_long_repeat(password) != None:
         print(f'The password contains {check_for_long_repeat(password)} repeating characters in row. Only two allowed.')
     else:
