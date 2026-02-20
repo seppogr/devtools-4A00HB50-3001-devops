@@ -1,7 +1,7 @@
 import re
 
 def main():
-    password_max_points = 6
+    password_max_points = 7
     password_score = 0
     password = input("Enter password to be checked: ")
     badPasswords = {
@@ -11,6 +11,12 @@ def main():
 
     print(f'Analysis for your password:')
     # This will check for password length
+
+    if password in badPasswords:
+        print(f'Password is very common.')
+    else:
+        print(f'Password is not one of the most common passowrds')
+        password_score += 1
 
     if len(password) < 6:
         print(f'Password is too short (less than 6 characters).')
@@ -35,6 +41,8 @@ def main():
     if has_upper(password):
         print(f'Password has upper characters.')
         password_score += 1
+    else:
+        print(f'Password has no upper characters.')
 
 # Check for numbers
     def has_digit(password):
@@ -44,7 +52,7 @@ def main():
         print(f'Password has numbers.')
         password_score += 1
     else:
-         print(f'Password has no upper characters.')
+         print(f'Password has no numbers.')
 
 # Check for special characters
     def has_symbol(password):
@@ -79,5 +87,5 @@ def main():
 
 
 # Give final score to user
-    print(f'Your password score is {password_score}/{password_max_points}')
+    print(f'Your password score is {password_score}/{password_max_points}.')
 
