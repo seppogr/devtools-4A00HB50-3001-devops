@@ -11,6 +11,7 @@ Options:
 --nodigits  | -nd                   –      Exclude digits
 --nosymbols | -ns                   –      Exclude symbols
 --length=<value> | -l=<value>       –      Add custom length for the password
+--multiple=<value> | -m=<value>     –      Customize amount of passwords made
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Combining options example:
 -pg -nl -nd -ns
