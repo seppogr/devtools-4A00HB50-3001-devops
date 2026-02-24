@@ -25,7 +25,7 @@ def checkParams(param):
     elif param == "--nosymbols" or param == "-ns":
         nosymbols = True
 
-    elif param.startswith("--multiple") or param.startswith("-m="):
+    elif param.startswith("--multiple=") or param.startswith("-m="):
         try:
             amountToGenerate = int(param.split("=")[1])
         except ValueError:
@@ -61,5 +61,7 @@ def main(params):
         print("Error: all character sets excluded.")
         return
 
-    password = "".join(random.choice(charset) for _ in range(length))
-    print(password)
+    while amountToGenerate > 0:
+        password = "".join(random.choice(charset) for _ in range(length))
+        print(password)
+        amountToGenerate -= 1
