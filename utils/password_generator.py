@@ -3,6 +3,7 @@ import string
 from utils.printFile import printFile
 
 length = 12
+amountToGenerate = 1
 
 nolowercase = False
 nouppercase = False
@@ -10,7 +11,7 @@ nodigits = False
 nosymbols = False
 
 def checkParams(param):
-    global length, nolowercase, nouppercase, nodigits, nosymbols
+    global length, amountToGenerate, nolowercase, nouppercase, nodigits, nosymbols
 
     if param == "--help" or param == "-h":
         printFile("utils/docs/pg_help.txt")
@@ -23,6 +24,14 @@ def checkParams(param):
         nodigits = True
     elif param == "--nosymbols" or param == "-ns":
         nosymbols = True
+
+    elif param.startswith("--multiple") or param.startswith("-m="):
+        try:
+            amountToGenerate = int(param.split("=")[1])
+        except ValueError:
+            print("Invalid value for multiple passwords.")
+            exit()
+
 
     elif param.startswith("--length=") or param.startswith("-l="):
         try:
