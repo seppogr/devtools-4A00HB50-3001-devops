@@ -39,7 +39,7 @@ def checkParams(param):
         nodigits = True
     elif param == "--nosymbols" or param == "-ns":
         nosymbols = True
-    elif param == "--save" or param == "save":
+    elif param == "--save" or param == "-s":
         savepwds = True
 
     elif param.startswith("--multiple=") or param.startswith("-m="):
