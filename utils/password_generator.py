@@ -80,3 +80,6 @@ def main(params):
         print(password)
         passwordsArr.append(password)
         amountToGenerate -= 1
+
+    if (savepwds):
+            save_passwords(passwordsArr)
