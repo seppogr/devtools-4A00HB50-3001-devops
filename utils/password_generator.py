@@ -10,6 +10,7 @@ nolowercase = False
 nouppercase = False
 nodigits = False
 nosymbols = False
+savepwds = False
 
 def save_passwords(passwords, filename="passwords.txt"):
     with open(filename, 'a') as f:
@@ -18,7 +19,7 @@ def save_passwords(passwords, filename="passwords.txt"):
             f.write(pwd + "\n")
 
 def checkParams(param):
-    global length, amountToGenerate, nolowercase, nouppercase, nodigits, nosymbols
+    global length, amountToGenerate, nolowercase, nouppercase, nodigits, nosymbols, savepwds
 
     if param == "--help" or param == "-h":
         printFile("utils/docs/pg_help.txt")
@@ -31,6 +32,8 @@ def checkParams(param):
         nodigits = True
     elif param == "--nosymbols" or param == "-ns":
         nosymbols = True
+    elif param == "--save" or param == "save":
+        savepwds = True
 
     elif param.startswith("--multiple=") or param.startswith("-m="):
         try:
