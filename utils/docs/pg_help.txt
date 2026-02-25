@@ -12,6 +12,7 @@ Options:
 --nosymbols | -ns                   –      Exclude symbols
 --length=<value> | -l=<value>       –      Add custom length for the password
 --multiple=<value> | -m=<value>     –      Customize amount of passwords made
+--save      | -same                 –      Save passwords to a default file
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Combining options example:
 -pg -nl -nd -ns

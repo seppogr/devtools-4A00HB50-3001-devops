@@ -1,6 +1,10 @@
 import random
 import string
+import os
+from datetime import datetime
 from utils.printFile import printFile
+
+passwordsArr = []
 
 length = 12
 amountToGenerate = 1
@@ -9,9 +13,20 @@ nolowercase = False
 nouppercase = False
 nodigits = False
 nosymbols = False
+savepwds = False
+
+def save_passwords(passwords, filename="passwords.txt", subdir="./utils/docs"):
+    os.makedirs(subdir, exist_ok=True)
+    filepath = os.path.join(subdir, filename)
+
+    with open(filepath, 'a') as f:
+        f.write(f"\n# {datetime.now()}\n")
+        for pwd in passwords:
+            f.write(pwd + "\n")
+    print(f"Passwords saved to {filepath}")
 
 def checkParams(param):
-    global length, amountToGenerate, nolowercase, nouppercase, nodigits, nosymbols
+    global length, amountToGenerate, nolowercase, nouppercase, nodigits, nosymbols, savepwds
 
     if param == "--help" or param == "-h":
         printFile("utils/docs/pg_help.txt")
@@ -24,6 +39,8 @@ def checkParams(param):
         nodigits = True
     elif param == "--nosymbols" or param == "-ns":
         nosymbols = True
+    elif param == "--save" or param == "-s":
+        savepwds = True
 
     elif param.startswith("--multiple=") or param.startswith("-m="):
         try:
@@ -66,4 +83,8 @@ def main(params):
     while amountToGenerate > 0:
         password = "".join(random.choice(charset) for _ in range(length))
         print(password)
+        passwordsArr.append(password)
         amountToGenerate -= 1
+
+    if (savepwds):
+            save_passwords(passwordsArr)
