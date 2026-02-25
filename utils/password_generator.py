@@ -93,6 +93,7 @@ def main(params):
         return
 
     if verbose:
+        print("Options:\n")
         print(f"nolowercase = {nolowercase}")
         print(f"nouppercase = {nouppercase}")
         print(f"nodigits = {nodigits}")
@@ -100,6 +101,7 @@ def main(params):
         print(f"save = {savepwds}")
         print(f"amount to generate = {amountToGenerate}")
         print(f"pwd length = {length}")
+        print("\nPasswords:\n")
 
     while amountToGenerate > 0:
         password = "".join(random.choice(charset) for _ in range(length))
