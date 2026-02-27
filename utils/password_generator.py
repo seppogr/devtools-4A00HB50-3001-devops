@@ -8,14 +8,16 @@ passwordsArr = []
 
 length = 12
 amountToGenerate = 1
+subdir = "./utils/docs"
 
 nolowercase = False
 nouppercase = False
 nodigits = False
 nosymbols = False
 savepwds = False
+verbose = False
 
-def save_passwords(passwords, filename="passwords.txt", subdir="./utils/docs"):
+def save_passwords(passwords, subdir, filename="passwords.txt"):
     os.makedirs(subdir, exist_ok=True)
     filepath = os.path.join(subdir, filename)
 
@@ -26,7 +28,7 @@ def save_passwords(passwords, filename="passwords.txt", subdir="./utils/docs"):
     print(f"Passwords saved to {filepath}")
 
 def checkParams(param):
-    global length, amountToGenerate, nolowercase, nouppercase, nodigits, nosymbols, savepwds
+    global length, amountToGenerate, subdir, nolowercase, nouppercase, nodigits, nosymbols, savepwds, verbose
 
     if param == "--help" or param == "-h":
         printFile("utils/docs/pg_help.txt")
@@ -39,8 +41,18 @@ def checkParams(param):
         nodigits = True
     elif param == "--nosymbols" or param == "-ns":
         nosymbols = True
+    elif param == "--verbose" or param == "-v":
+        verbose = True
     elif param == "--save" or param == "-s":
         savepwds = True
+
+    elif param.startswith("--save=") or param.startswith("-s="):
+        try:
+            savepwds = True
+            subdir = param.split("=")[1]
+        except IndexError:
+            print("Error: --save requires a directory path after '=' (example: --save=./mydir)")
+            exit(1)
 
     elif param.startswith("--multiple=") or param.startswith("-m="):
         try:
@@ -80,6 +92,17 @@ def main(params):
         print("Error: all character sets excluded.")
         return
 
+    if verbose:
+        print("Options:\n")
+        print(f"nolowercase = {nolowercase}")
+        print(f"nouppercase = {nouppercase}")
+        print(f"nodigits = {nodigits}")
+        print(f"nosymbols = {nosymbols}")
+        print(f"save = {savepwds}")
+        print(f"amount to generate = {amountToGenerate}")
+        print(f"pwd length = {length}")
+        print("\nPasswords:\n")
+
     while amountToGenerate > 0:
         password = "".join(random.choice(charset) for _ in range(length))
         print(password)
@@ -87,4 +110,4 @@ def main(params):
         amountToGenerate -= 1
 
     if (savepwds):
-            save_passwords(passwordsArr)
+            save_passwords(passwordsArr, subdir)
