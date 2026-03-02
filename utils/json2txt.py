@@ -5,3 +5,6 @@ import sys
 def main():
     print("This is JSON converter")
 
+    if len(sys.argv) != 2:
+        print("Usage: python json2txt.py <filename>")
+        sys.exit(1)
