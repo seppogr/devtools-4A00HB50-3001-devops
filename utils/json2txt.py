@@ -18,8 +18,10 @@ def main():
     with open(filename, "r") as f:
         data = json.load(f)
 
+    # Iterate over each entry and print results
     for entry in data:
         print(entry["id"], entry["name"], entry["age"])
 
+# This line ensures that main() runs only when the script is executed directly
 if __name__ == "__main__":
     main()
