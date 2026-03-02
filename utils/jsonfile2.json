@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Margherita",
+        "size": "Medium",
+        "toppings": ["Cheese", "Tomato"]
+    },
+    {
+        "id": 2,
+        "name": "Pepperoni",
+        "size": "Large",
+        "toppings": ["Cheese", "Tomato", "Pepperoni"]
+    },
+    {
+        "id": 3,
+        "name": "Hawaiian",
+        "size": "Medium",
+        "toppings": ["Cheese", "Tomato", "Ham", "Pineapple"]
+    },
+    {
+        "id": 4,
+        "name": "Veggie",
+        "size": "Small",
+        "toppings": ["Cheese", "Tomato", "Mushrooms", "Bell Peppers", "Onions"]
+    },
+    {
+        "id": 5,
+        "name": "BBQ Chicken",
+        "size": "Large",
+        "toppings": ["Cheese", "BBQ Sauce", "Chicken", "Onions"]
+    },
+    {
+        "id": 6,
+        "name": "Meat Lovers",
+        "size": "Extra Large",
+        "toppings": ["Cheese", "Tomato", "Pepperoni", "Sausage", "Bacon", "Ham"]
+    }
+]
