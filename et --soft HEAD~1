@@ -1,0 +1,481 @@
+[33mcommit 40564c33ced07c10907bf254dea1d1d4674cda23[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeat[m[33m)[m
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 19:50:25 2026 +0200
+
+    doc(jsonconverter): add comments to Iteration+print and if __name__ == __main__
+
+[33mcommit 787fb94333f4c3a5c30c7a70ca9c95c2b22698ca[m
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 19:44:42 2026 +0200
+
+    doc(jsonconverter): add comments to main(): and validation
+
+[33mcommit 3bb2252fccb423f5129a290bbca5b9e00e251aa1[m[33m ([m[1;31morigin/devel[m[33m, [m[1;32mdevel[m[33m)[m
+Merge: 68ca65c fc2a404
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 19:40:54 2026 +0200
+
+    Merge pull request #78 from EskoRautiainen/feat
+    
+    fix(jsonconverter): return accidentally removed contact ben
+
+[33mcommit fc2a404b8254ef5d06e75a9ef71773a236497c14[m[33m ([m[1;31morigin/feat[m[33m)[m
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 19:40:19 2026 +0200
+
+    fix(jsonconverter): return accidentally removed contact ben
+
+[33mcommit 68ca65c076b1227a3abd1fb77713b1f4f106231c[m
+Merge: 06c25aa cad6128
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 19:38:48 2026 +0200
+
+    Merge pull request #77 from EskoRautiainen/feat
+    
+    fix(jsonconverter): return accidentally removed contact andy
+
+[33mcommit cad612822ecfb652720830bec93c953b9ea18277[m
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 19:35:36 2026 +0200
+
+    fix(jsonconverter): return accidentally removed contact andy
+
+[33mcommit 06c25aa9d9f60ea529b9fccacf7622c9353bb83e[m
+Merge: 97be864 c1ce389
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 02:33:13 2026 +0200
+
+    Merge pull request #76 from EskoRautiainen/feat
+    
+    Enhance JSON converter to handle arrays and object iteration
+
+[33mcommit c1ce389a30efed6906a4f306286d2fb47ac08c26[m
+Author: EskoRautiainen <Rautiainen98@gmail.com>
+Date:   Mon Mar 2 02:30:51 2026 +0200
+
+    feat(jsonconverter): change how items are iterated over. now works w/ json objects wrapped inside array
+
+[33mcommit aa03aad94af786b4d88f715f3bb8af3c1e679380[m
+Author: EskoRautiainen <Rautiainen98@gmail.com>
+Date:   Mon Mar 2 02:28:34 2026 +0200
+
+    feat(jsonconverter): wrap multiple objects into an array
+
+[33mcommit a8275cb2c59aa321e8ef37451e5cdcacef3296c7[m
+Author: EskoRautiainen <Rautiainen98@gmail.com>
+Date:   Mon Mar 2 02:15:12 2026 +0200
+
+    feat(jsonconverter): read JSON and convert it to Python Data
+
+[33mcommit 97be86422c8679ff67e3bcf8f680edde63ee1f0c[m
+Merge: 2e3ecbd f39f88b
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 02:09:52 2026 +0200
+
+    Merge pull request #75 from EskoRautiainen/feat
+    
+    feat(jsonconverter): read filename from sys.argv[1]
+
+[33mcommit f39f88b1d39213adb8a3191477deca87eced3927[m
+Author: EskoRautiainen <Rautiainen98@gmail.com>
+Date:   Mon Mar 2 02:09:15 2026 +0200
+
+    feat(jsonconverter): read filename from sys.argv[1]
+
+[33mcommit 2e3ecbd370e06a61feefabaa11c644140686b4ac[m
+Merge: dbc5378 d2760b0
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 02:06:31 2026 +0200
+
+    Merge pull request #74 from EskoRautiainen/feat
+    
+    feat(jsonconverter): suggest correct usage and sys.exit(1) on bad usage
+
+[33mcommit d2760b0b03c86f813766569f7caf0e8108212a85[m
+Author: EskoRautiainen <Rautiainen98@gmail.com>
+Date:   Mon Mar 2 02:05:33 2026 +0200
+
+    feat(jsonconverter): suggest correct usage and sys.exit(1) on bad usage
+
+[33mcommit dbc5378ffc03dcc11ee5e4e825ec5bc1661740f1[m
+Merge: ec70bfb c2d6b7d
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 01:58:44 2026 +0200
+
+    Merge pull request #73 from EskoRautiainen/feat
+    
+    feat(jsonconverter): add imports
+
+[33mcommit c2d6b7df0549eab4572b9c22ae63d320d07ec4a5[m
+Author: EskoRautiainen <Rautiainen98@gmail.com>
+Date:   Mon Mar 2 01:56:43 2026 +0200
+
+    feat(jsonconverter): add imports
+
+[33mcommit ec70bfb02ec421970eef7abea3423dcf0af03937[m
+Merge: ca4a5c8 5785077
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 01:48:15 2026 +0200
+
+    Merge pull request #72 from EskoRautiainen/feat
+    
+    Add contacts for Andy and Ben to JSON converter
+
+[33mcommit 57850775cfdeef5ce386a8d8e36d80b48c1aeb3f[m
+Author: EskoRautiainen <Rautiainen98@gmail.com>
+Date:   Mon Mar 2 01:38:09 2026 +0200
+
+    feat(jsonconverter): add ben contact
+
+[33mcommit 96adcd26936ebfb0c72ad91595eeea0fd520c102[m
+Author: EskoRautiainen <Rautiainen98@gmail.com>
+Date:   Mon Mar 2 01:33:44 2026 +0200
+
+    feat(jsonconverter): add andy contact
+
+[33mcommit ca4a5c82e8b051af29f4cc4a0f4e93423dd4fda4[m
+Merge: 7f4030f c45bc33
+Author: Esko Rautiainen <rautiainen98@gmail.com>
+Date:   Mon Mar 2 01:21:51 2026 +0200
+
+    Merge pull request #71 from EskoRautiainen/feat
+    
+    Add multiple contacts to JSON converter
+
+[33mcommit c45bc3307233e73e7e6ab4d7a359624655a39617[m
+Author: EskoRautiainen <Rautiainen98@gmail.com>
+Date:   Mon Mar 2 00:59:01 2026 +0200
+
+    feat(jsonconverter): add susan contact
+
+[33mcommit 629c6921fc350bfbe87639731b31400eeba3c287[m
+Author: EskoRautiainen <Rautiainen98@gmail.com>
+Date:   Mon Mar 2 00:58:32 2026 +0200
+
+    feat(jsonconverter): add mark contact
+
+[33mcommit fc7d785dcb0a325ca87e6d81812a4e053b5ce130[m
+Author: EskoRautiainen <Rautiainen98@gmail.com>
+Date:   Mon Mar 2 00:53:36 2026 +0200
+
+    feat(jsonconverter): add tony contact
+
+[33mcommit 7f4030ff9b0dc70c2ddcfbb98f3a94acd286543c[m
+Merge: fa97de9 0b21083
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 27 12:31:25 2026 +0200
+
+    Merge pull request #70 from dmitry-nazarov22/feat/passwordgenerator
+    
+    Feat/passwordgenerator
+
+[33mcommit 0b21083dda74bc9cdb76d7a0fba94be67649b49e[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 21:02:05 2026 +0300
+
+    docs(utils/docs/pg_help.txt): add explanation of --verbose option
+
+[33mcommit d3b6e0608f6400a4c38bbb28a70be7ef1c26fcda[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 21:00:49 2026 +0300
+
+    feat(utils/password_generator.py): add headers to verbose –  more readable
+
+[33mcommit aebaa8d5312acac0d95abecc16a76620dd080ce0[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 20:59:26 2026 +0300
+
+    feat(utils/password_generator.py): add if statement for --verbose to show each options state
+
+[33mcommit 64c931d3eef4a96a96260bb016b31aa743dbbb30[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 20:50:17 2026 +0300
+
+    feat(utils/password_generator.py): add --verbose option (not implemented)
+
+[33mcommit 312e8c3c267465d3da3231f97a7f49fc6eba8897[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 20:41:56 2026 +0300
+
+    fix(utils/password_generator.py): remove --interactive option. Commit saved for future rework. No time to implement
+
+[33mcommit 3627ce24f540923944c00b88f633c26dddbe2db9[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 20:36:23 2026 +0300
+
+    feat(utils/password_generator.py): add option: --interactive, and add interactive(): not implemented yet
+
+[33mcommit 82ee2d95d603032885ecff20faa1d13db3ed632a[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 20:26:34 2026 +0300
+
+    docs(utils/docs/pg_help.txt): add explanation of --save=<path> option
+
+[33mcommit 04d296dc4ad78605bc0086c8b9bb1db45edc221b[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 20:15:23 2026 +0300
+
+    feat(utils/password_generator.py): add --save=<path> elif statement to save passwords into a custom directory
+
+[33mcommit fa97de9ad1c89571a1ab1adb654cd3f6a658c9e2[m
+Merge: 9a7b800 a8e0832
+Author: Dmitry Nazarov <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 20:02:02 2026 +0300
+
+    Merge pull request #69 from dmitry-nazarov22/feat/passwordgenerator
+    
+    Feat/passwordgenerator
+
+[33mcommit a8e0832f76e835d1fa7c9607cb5b0b0abef439d8[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 19:59:10 2026 +0300
+
+    docs(utils/docs/pg_help.txt): add explanation of --save option
+
+[33mcommit d2c88f998d7e858857eadb8fb1c97c32ccb1c3c6[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 19:57:38 2026 +0300
+
+    fix(utils/password_generator.py): correct --save options shortform to: -s from: save
+
+[33mcommit 50f02920630a6805a805b609b395e2233d2fc17b[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 19:56:12 2026 +0300
+
+    feat(utils/password_generator.py): add subdir for the save_passwords() and correct function to save file there
+
+[33mcommit ca3169af7103385c5684f357253238a70671af0e[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 19:50:19 2026 +0300
+
+    feat(utils/password_generator.py): add if statement: when -s option enabled use save_passwords() at the end
+
+[33mcommit c942dbd93deb1c77e3513bdc79460ce723623975[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 19:47:22 2026 +0300
+
+    feat(utils/password_generator.py): add passwordArr, add append to it on pwd generation
+
+[33mcommit 619cfd879e5046d7e22cf4d9fb92fce6234d6be1[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 19:39:59 2026 +0300
+
+    feat(utils/password_generator.py): add elif statement for --save option management
+
+[33mcommit 4d17ce0cf15d3f00909bd61e9c95426ee459771c[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 19:39:17 2026 +0300
+
+    feat(utils/password_generator.py): add save_passwords function
+
+[33mcommit 9a7b800b6d7523de179e2b3f82a57fce2d29fa84[m
+Merge: 08e3d11 54b5785
+Author: Dmitry Nazarov <dima.nazarov@icloud.com>
+Date:   Wed Feb 25 19:30:35 2026 +0300
+
+    Merge pull request #68 from dmitry-nazarov22/feat/passwordgenerator
+    
+    Feat/passwordgenerator
+
+[33mcommit 54b57851efb0cd69c1c5fca40eb7bbb59404df74[m
+Merge: bbd6268 a6f9924
+Author: Dmitry Nazarov <dima.nazarov@icloud.com>
+Date:   Tue Feb 24 19:51:46 2026 +0300
+
+    Merge branch 'devops-devtools-project-0:main' into feat/passwordgenerator
+
+[33mcommit bbd6268f1f353e9bf73741e4cb6a39a0d4b8cbaa[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Tue Feb 24 19:49:49 2026 +0300
+
+    docs(utils/docs/pg_help.txt): add '-pg' on line 19 for clarity
+
+[33mcommit a67efbeae7b58678974f4c26ba202ebee4968806[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Tue Feb 24 19:48:18 2026 +0300
+
+    docs(utils/docs/pg_help.txt): add usage example of --multiple
+
+[33mcommit afc49410c7f5b29739981cc511096b09bf879ab6[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Tue Feb 24 19:47:08 2026 +0300
+
+    docs(utils/docs/pg_help.txt): add explanation for --multiple option
+
+[33mcommit 52e8be6978935c7ef6f18e875eef54fb710d9f45[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Tue Feb 24 19:44:34 2026 +0300
+
+    fix(utils/password_generator.py): add amountToGenerate as global in def main()
+
+[33mcommit 866a2d352ca0713c3e936f62523228d50c9a4b50[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Tue Feb 24 19:43:46 2026 +0300
+
+    feat(utils/password_generator.py): add while loop around password generation; line 64
+
+[33mcommit 86ac44cecc655c131038b5e902b779eea7036229[m
+Author: dmitry-nazarov22 <dima.nazarov@icloud.com>
+Date:   Tue Feb 24 19:30:46 2026 +0300
+
+    feat(utils/password_generator.py): add elif statement for --multiple option
+
+[33mcommit 08e3d11d1692356147eaf9bad8c9bf34303394a7[m
+Merge: c2bc497 341047d
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 17:17:11 2026 +0200
+
+    Merge pull request #67 from seppogr/devel
+    
+    Devel
+
+[33mcommit a6f9924f3807e65d52f9ea0c75b1095d6a00329c[m[33m ([m[1;31morigin/main-LenovoEsko[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 63815b0 1c40ee5
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 17:16:26 2026 +0200
+
+    Merge pull request #66 from seppogr/feature
+    
+    Feature
+
+[33mcommit 341047d6489ed28d984af449dfab48e88065cca3[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 17:15:30 2026 +0200
+
+    feat(pswd_strength_checker): Add hints to improve passwords and use the generator
+
+[33mcommit f1bda83c966cd452999f276c69bb06ac00dfb7a2[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 17:15:05 2026 +0200
+
+    feat(pswd_strength_checker): Add hints to improve passwords and use the generator
+
+[33mcommit 1c40ee51340475468512a4fc11b4777eca591bae[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 17:12:30 2026 +0200
+
+    feat(pswd_strength_checker): Add hints to improve passwords
+
+[33mcommit f0f8534f1a9d58b0a7987b3e14f9baa9b4334690[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 16:41:22 2026 +0200
+
+    doc(pg_help): Add documentation to Guess bad password
+
+[33mcommit 56b56eadeb11ae7aa2d13825d560a6a3666a3763[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 16:37:47 2026 +0200
+
+    feat(devtools): Add guess_bad_password call
+
+[33mcommit c2bc49799516491df17825c72bfad9afdab8356d[m
+Merge: ac0c253 45bca0d
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 16:34:40 2026 +0200
+
+    Merge pull request #65 from seppogr/devel
+    
+    feat(guess_bad_password): Add main function
+
+[33mcommit 45bca0d4a7dc69b77a300d1a21ef33f906ca4b2f[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 16:33:31 2026 +0200
+
+    feat(guess_bad_password): Add main function
+
+[33mcommit ac0c2534aac30b807daa53afa714ee8a7288a8cd[m
+Merge: f5e250e 583c973
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 16:31:04 2026 +0200
+
+    Merge pull request #64 from seppogr/feature
+    
+    Feature
+
+[33mcommit 583c973333f496e919fa58f711a59d4c0e8cc910[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 16:29:40 2026 +0200
+
+    refactor(guess_bad_password): Remove prompt: Ask user name
+
+[33mcommit f65dc4a247a98bdd809b9ff8aab51830c7ef3ef0[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 16:26:50 2026 +0200
+
+    refactor(guess_bad_password): Rewrite user messages
+
+[33mcommit 617b74960c18cb991e2e5142ab514f88a073b067[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 16:18:11 2026 +0200
+
+    feat(guess_bad_password): Print word only on one single line
+
+[33mcommit bafa56334eb631a58375c6a5e48d498a38dee143[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 16:11:59 2026 +0200
+
+    feat(guess_bad_password): Add hangman game logic
+
+[33mcommit b9c1707aad1a89e839b440651570c7de782157b0[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 16:05:24 2026 +0200
+
+    feat(guess_bad_password): Add random bad password printout
+
+[33mcommit f5e250ec5c06a50ef333aab83970bf3be7ff53b1[m
+Merge: d49ef22 652a3f7
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 15:42:42 2026 +0200
+
+    Merge pull request #63 from seppogr/devel
+    
+    Devel
+
+[33mcommit 652a3f7166253df1e674bbc993732ce9f5baf087[m
+Merge: 34ba445 d49ef22
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 15:42:18 2026 +0200
+
+    Merge branch 'devops-devtools-project-0:devel' into devel
+
+[33mcommit d49ef2270e45f64ff87a1f360174931bd9cef601[m
+Merge: 8adf429 f2cd464
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 15:41:57 2026 +0200
+
+    Merge pull request #62 from seppogr/feature
+    
+    Feature
+
+[33mcommit 34ba4451c3be2b8ef558659546ae87454b7a667f[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 15:40:53 2026 +0200
+
+    refactor(pswd_strength_check): Comment all code
+
+[33mcommit f2cd464905c5303d8b902080e82e76d02221def7[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 15:38:48 2026 +0200
+
+    refactor(pswd_strength_check): Add else logic to has_upper
+
+[33mcommit dcb6db88a7984ec5f504c57b710a837ef9344cf7[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 15:34:59 2026 +0200
+
+    doc(pg_help.txt): Add documentation on usage and rules enforced in pswd_strength_check
+
+[33mcommit 7ca9ffb936454fa10bd4ea18408faa3c9eaeef50[m
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 15:29:20 2026 +0200
+
+    feat(pswd_strength_checker): Add check against the most common passwords
+
+[33mcommit 8adf429dfc3e0004ee0701b21e3b85e4067a1545[m
+Merge: e137075 7feb3e3
+Author: Seppo Grubert <seppo.grubert@tuni.fi>
+Date:   Fri Feb 20 15:25:45 2026 +0200
+
+    Merge pull request #61 from seppogr/devel
+    
+    feat(pswd_strength_checker): Add else statements and messages to has_…
