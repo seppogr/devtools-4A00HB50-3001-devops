@@ -3,19 +3,19 @@ import json
 import sys
 
 # Usage:
-# python json2txt.py <filename> (jsonfile.json)
+# python devtools.py -js utils/<filename>
 
 # Main function
-def main():
+def main(params):
     print("This is JSON converter")
 
     # If function does not get proper imputs, guide user and exit.
-    if len(sys.argv) != 2:
-        print("Usage: python json2txt.py <filename>")
+    if len(params) < 3:
+        print("Usage: python devtools.py -js <filename>")
         sys.exit(1)
 
     # Choose the file on CLI.
-    filename = sys.argv[1]
+    filename = params[2]
 
     # Convert JSON to Python data object.
     with open(filename, "r") as f:
@@ -31,7 +31,3 @@ def main():
                 print(entry["id"], entry["name"], entry["size"], entry["toppings"])
             else: # Fallback for unexpected files
                 print("Wrong filename")
-
-# This line ensures that main() runs only when the script is executed directly
-if __name__ == "__main__":
-    main()
