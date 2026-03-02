@@ -2,12 +2,15 @@
 import json
 import sys
 
+# Main function
 def main():
     print("This is JSON converter")
 
+    # If function does not get proper imputs, guide user and exit.
     if len(sys.argv) != 2:
         print("Usage: python json2txt.py <filename>")
         sys.exit(1)
+
 
     filename = sys.argv[1]
 
