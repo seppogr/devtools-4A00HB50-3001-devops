@@ -11,7 +11,7 @@ def switch(params):
         elif params[1] == "--passwordgenerator" or params[1] == "-pg":
             pg.main(params)
         elif params[1] == "--jsonconverter" or params[1] == "-js":
-            js.main()
+            js.main(params)
         elif params[1] == "--pswdchk":
             psc.main()
         elif params[1] == "--guessbadpassword" or params[1] == "-gbp":
