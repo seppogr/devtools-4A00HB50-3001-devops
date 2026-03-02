@@ -8,3 +8,5 @@ def main():
     if len(sys.argv) != 2:
         print("Usage: python json2txt.py <filename>")
         sys.exit(1)
+
+    filename = sys.argv[1]
