@@ -90,7 +90,7 @@ def main():
     print(f'Your password score is {password_score}/{password_max_points}.')
 
     if password_score < 4:
-        print(f'You can try to learn som good passwords by playin our "Guess bad password" -game. Try it today and learn!')
+        print(f'You can try to learn some good passwords by playing our "Guess bad password" -game. Try it today and learn!')
 
     elif password_score < 2:
         print(f'Maybe you could give our password generator a go?')
