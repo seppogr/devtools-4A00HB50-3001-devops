@@ -24,4 +24,15 @@ Options:
 --save=<path> | -s=<path>           –      Save passwords to custom path
 --verbose   | -v                    –      Show each options state
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Combining options example:
+-pg -nl -nd -ns
+Custom length setting example:
+-pg --length=25
+Multiple password generation example:
+-pg --multiple=5
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Help:
+--Help                              –     Display utils/docs/pg_help.txt
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
