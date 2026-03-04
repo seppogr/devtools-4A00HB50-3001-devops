@@ -44,4 +44,12 @@ Command:
 --pswdchk                   - Asks for a password and analyses its strength
 
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+- not in the most common list
+- has numbers
+- has symbols
+- has uppercase
+- has lowercase
+- is longer than 6 characters
+- has no more than 2 same characters in row, eg "aa" is allowed but "aaa" is not
+
 
