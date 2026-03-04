@@ -4,11 +4,12 @@ This project is about working together on GitHub, managing version control and u
 Tools are called with:
 `python devtools.py <scriptName> <params> <params>`
 
-## Devtools we developed:
+### Devtools we developed:
 
-### Password generator
+# Password generator
 
 The password generator can take multiple promps and generate strong passwords.
+
 ---
 Command:
 --passwordgenerator | -pg           –   Generating password with default setting
@@ -24,28 +25,28 @@ Options:
 --save      | -same                 –      Save passwords to a default file
 --save=<path> | -s=<path>           –      Save passwords to custom path
 --verbose   | -v                    –      Show each options state
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+---
 Combining options example:
 -pg -nl -nd -ns
 Custom length setting example:
 -pg --length=25
 Multiple password generation example:
 -pg --multiple=5
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-Help:
---Help                              –     Display utils/docs/pg_help.txt
 
 ---
-### Password strenght checker
+Help:
+`--Help`                              – Display utils/docs/pg_help.txt
+
+---
+# Password strenght checker
 
 This utility will ask for a password in a prompt and check if it passes the following tests:
 It will rate the strenght of your password on a scale of 0-7.
 
-=======
 ---
->>>>>>> ad3f55bc09dba9362f6e092c1c08e4ec751a4b6d
 Command:
---pswdchk                   - Asks for a password and analyses its strength
+`--pswdchk`                           - Asks for a password and analyses its strength
 
 ---
 - not in the most common list
@@ -57,25 +58,23 @@ Command:
 - has no more than 2 same characters in row, eg "aa" is allowed but "aaa" is not
 
 ---
-### Guess bad password hangman game
+# Guess bad password hangman game
 
 A fun way to learn what passwords not to use. A hangman game of bad choices!!!
 
-=======
----
->>>>>>> ad3f55bc09dba9362f6e092c1c08e4ec751a4b6d
-Command:
---guessbadpassword or -gbp
 
 ---
-### JSONconverter
+
+Command:
+`--guessbadpassword` or `-gbp`
+
+---
+# JSONconverter
 
 Convert JSON data from utils/<filename> to Python data object and display it in terminal.
 It will adjust dynamically to the amount of keys in the JSON object.
 
-=======
 ---
->>>>>>> ad3f55bc09dba9362f6e092c1c08e4ec751a4b6d
 
 This is JSON converter
 id: 1, name: Margherita, size: Medium, toppings: ['Cheese', 'Tomato']
@@ -88,8 +87,4 @@ id: 2, name: alice, age: 21
 id: 3, name: tony, age: 22
 
 Command:
---jsonconverter utils/<filename> or -js utils/<filename>
-
-=======
----
->>>>>>> ad3f55bc09dba9362f6e092c1c08e4ec751a4b6d
+`--jsonconverter utils/<filename>` or `-js utils/<filename>`
