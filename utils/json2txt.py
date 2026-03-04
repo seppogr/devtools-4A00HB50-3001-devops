@@ -21,13 +21,7 @@ def main(params):
     with open(filename, "r") as f:
         data = json.load(f)
 
-    # Iterate over each entry and print results based on file name
-        for entry in data:
-            if "jsonfile.json" in filename:
-                # People JSON
-                print(f"id: {entry['id']}, name: {entry['name']}, age: {entry['age']}")
-            elif "jsonfile2.json" in filename:
-                # Pizza JSON
-                print(f"id: {entry['id']}, name: {entry['name']}, size: {entry['size']}, toppings: {entry['toppings']}")
-            else: # Fallback for unexpected files
-                print("Wrong filename")
+    # Iterate over each entry and print results based on the number of keys.
+    for entry in data:
+        formatted = ", ".join(f"{key}: {value}" for key, value in entry.items())
+        print(formatted)
